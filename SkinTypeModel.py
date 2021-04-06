@@ -29,3 +29,7 @@ learner.fit_onecycle(1e-4, 11)
 # learner.fit_onecycle(1e-4, 11)
 
 predictor = ktrain.get_predictor(learner.model, preproc)
+
+predictor.save(r'C:\Users\mayurk\Desktop\dark_circle')
+
+learner.evaluate()
